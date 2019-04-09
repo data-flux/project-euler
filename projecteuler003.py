@@ -15,7 +15,7 @@ from Euler.sieve import Sieve
 if __name__=="__main__":
     tic()
     N = 600851475143
-    sieve = Sieve(10)
+    sieve = Sieve(10000)
 
     ind = 0
     p = 0
