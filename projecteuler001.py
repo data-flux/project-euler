@@ -6,8 +6,8 @@ STATUS:  done
 EXPLANATION:
     - The sum of numbers [1,n] can be written as n*(n+1)/2
     - The sum of numbers below m divisible by a can thus be written as:
-        - b = ceil(m/a)-1
         - a*b*(b+1)/2
+        - where b = ceil(m/a)-1
     - Since we add numbers divible by 15 twice, we subtract those again.
 """
 
@@ -17,8 +17,7 @@ from math import ceil
 
 def sumOfDivByNUnderM(N,M):
     b = ceil(M/N)-1
-    x= int((b*(b+1)/2)*N)
-    return x
+    return int((b*(b+1)/2)*N)
 
 if __name__=="__main__":
     tic()
