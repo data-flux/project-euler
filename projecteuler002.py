@@ -2,7 +2,7 @@
 """
 PROBLEM: 002
 AUTHOR:  Dirk Meijer
-STATUS:  experimentation
+STATUS:  done
 EXPLANATION:
     Tracking the sum while counting.
 """
