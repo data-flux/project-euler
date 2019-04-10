@@ -8,7 +8,7 @@ EXPLANATION:
 """
 
 from Euler.tictoc import *
-from Euler.sieve import Sieve
+from Euler.primes import Sieve
 
 
 

@@ -32,13 +32,17 @@ class Sieve:
         self.primes += cndd
         self.max_seen = limit
 
-if __name__=="__main__":
-    from tictoc import *
-    tic()
-    Sieve( 10_000)
-    Sieve(100_000)
-    toc()
-    tic()
-    s = Sieve(10_000)
-    s.extend(100_000)
-    toc()
+
+def primefactors(n,primes):
+    ind = 0
+    factors = {p: 0 for p in primes}
+    while n>1:
+        if ind == len(primes):
+            raise Exception("prime list insufficient")
+        if n % primes[ind] == 0:
+            factors[primes[ind]] += 1
+            n //= primes[ind]
+        else:
+            ind += 1
+    return factors
+

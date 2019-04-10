@@ -9,20 +9,7 @@ EXPLANATION:
 """
 
 from Euler.tictoc import *
-from Euler.sieve import Sieve
-
-def primefactors(n,primes):
-    ind = 0
-    factors = {p: 0 for p in primes}
-    while n>1:
-        if ind == len(primes):
-            raise Exception("prime list insufficient")
-        if n % primes[ind] == 0:
-            factors[primes[ind]] += 1
-            n //= primes[ind]
-        else:
-            ind += 1
-    return factors
+from Euler.primes import Sieve,primefactors
 
 
 if __name__=="__main__":
