@@ -8,20 +8,7 @@ EXPLANATION:
 """
 
 from Euler.tictoc import *
-<<<<<<< HEAD
 from Euler.digits import palindromic
-=======
-from math import log10,floor
-
-def ispalindromic(n):
-    d = floor(log10(n))+1
-    digits = d*[None,]
-    for b in range(d):
-        digits[b] = n%10
-        n //= 10
-
-    return digits == list(reversed(digits))
->>>>>>> stash
 
 
 if __name__=="__main__":
