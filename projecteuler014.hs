@@ -1,10 +1,11 @@
 #!/usr/bin/env ghci
 
---PROBLEM: 000
+--PROBLEM: 014
 --AUTHOR:  Dirk Meijer
---STATUS:  {experimentation, in-progress, needs-optimization, done}
+--STATUS:  done
 --EXPLANATION:
---    <explanation here>
+--    built-in memoization (because no side effects) and proper tail calls. 
+--    can undoubtedly be improved.
 
 import Data.List
 
