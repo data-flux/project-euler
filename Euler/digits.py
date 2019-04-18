@@ -1,10 +1,10 @@
 #!/usr/bin/env python3.6
-from math import log10,ceil
+from math import log10,floor
 
 def intToDigits(n):
     if n <= 0:
         raise ValueError("Positive integers only!")
-    d = ceil(log10(n))
+    d = floor(log10(n))+1
     digits = d*[None,]
     for b in range(d-1,-1,-1):
         digits[b] = n%10
