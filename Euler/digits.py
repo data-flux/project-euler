@@ -20,6 +20,14 @@ def palindromic(n):
     digits = intToDigits(n)
     return digits == list(reversed(digits))
 
+def pandigital9(n):
+    digits = intToDigits(n)
+    if len(digits)!=9:
+        return False
+    if not all(d in digits for d in range(1,9)):
+        return False
+    return True
+
 if __name__ == "__main__":
     n = 5001
     print(n)
