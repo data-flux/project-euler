@@ -7,7 +7,8 @@ EXPLANATION:
     <explanation here>
 """
 
-from Euler.tictoc import *
+from Euler.tictoc import tic,toc
+from Euler.eprint import eprint
 
 if __name__=="__main__":
     tic()
