@@ -28,6 +28,12 @@ def pandigital9(n):
         return False
     return True
 
+def pandigital(n):
+    digits = intToDigits(n)
+    if not all(d in digits for d in range(1,len(digits)+1)):
+        return False
+    return True
+
 if __name__ == "__main__":
     n = 5001
     print(n)
