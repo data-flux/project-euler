@@ -24,6 +24,4 @@ for i in range(150,668):
 
     http = str(urllib.request.urlopen(f"https://projecteuler.net/problem={i}").read())
     title = unescape(re.search(r'<h2>(.+)</h2>',http)[1])
-    title = title.replace('\\','')
-    title = re.sub(r'<(\w+)>(.+?)<\/\1>',r'\2',title)
     print(f"|{i:7d}|{title:60}|{status:15}|")
