@@ -668,4 +668,4 @@
 |    664|An infinite game                                            |not-attempted  |
 |    665|Proportionate Nim                                           |not-attempted  |
 |    666|Polymorphic Bacteria                                        |not-attempted  |
-|    667|Moving Pentagon                                             |done           |
+|    667|Moving Pentagon                                             |experimentation|

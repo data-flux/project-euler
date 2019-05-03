@@ -10,12 +10,12 @@ print(f"|Problem|{'Title':60}|{'Status':15}|")
 print(f"|------:|{'-'*60}|{'-'*15}|")
 
 files = [f for f in sorted(listdir('.')) if "projecteuler" in f and "000" not in f]
-for i in range(150,668):
+for i in range(1,668):
     status = None
     for f in [f for f in files if f"{i:03d}" in f]:
         with open(f,'r') as F:
             try:
-                contents = str(F.readlines())
+                contents = "\n".join(F.readlines())
                 status = re.search(r'STATUS:\s+(\S+)\n',contents)[1]
             except:
                 status = "done"
