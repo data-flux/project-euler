@@ -2,7 +2,7 @@
 """
 PROBLEM: 036
 AUTHOR:  Dirk Meijer
-STATUS:  in-progress
+STATUS:  done
 EXPLANATION:
     we look for palindromic numbers less than 1e6,
         cbaabc or cbabc, where abc % 2 != 0 (to prevent leading zeros in base 2)
