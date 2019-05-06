@@ -5,12 +5,14 @@ import re
 import urllib.request
 from html import unescape
 
+LATEST_PROBLEM=668
+
 print("# Project Euler\n")
 print(f"|Problem|{'Title':60}|{'Status':15}|")
 print(f"|------:|{'-'*60}|{'-'*15}|")
 
 files = [f for f in sorted(listdir('.')) if "projecteuler" in f and "000" not in f]
-for i in range(1,668):
+for i in range(1,LATEST_PROBLEM+1):
     status = None
     fn = ""
     for f in [f for f in files if f"{i:03d}" in f]:
