@@ -5,35 +5,36 @@ import re
 import urllib.request
 from html import unescape
 
+with open('README.md','w') as file:
 
-print("# Project Euler\n")
-print(f"|Problem|{'Title':60}|{'Status':15}|")
-print(f"|------:|{'-'*60}|{'-'*15}|")
-
-files = [f for f in sorted(listdir('.')) if "projecteuler" in f and "000" not in f]
-for i in range(1,1000000):
-    status = None
-    fn = ""
-    for f in [f for f in files if f"{i:03d}" in f]:
-        fn = f
-        with open(f,'r') as F:
-            try:
-                contents = "\n".join(F.readlines())
-                status = re.search(r'STATUS:\s+(\S+)\n',contents)[1]
-            except:
-                status = "done"
-    if status == None:
-        status = "not-attempted"
-
-    http = str(urllib.request.urlopen(f"https://projecteuler.net/problem={i}").read())
-    title = unescape(re.search(r'<h2>(.+)</h2>',http)[1])
-    if title == "Problems Archives":
-        break
-    if status == "not-attempted":
-        print(f"|{i}|[{title}](https://projecteuler.net/problem={i})|{status}|")
-    else:
-        print(f"|{i}|[{title}](https://projecteuler.net/problem={i})|[{status}](./{fn})|")
-
+    file.write("# Project Euler\n\n")
+    file.write(f"|Problem|{'Title':60}|{'Status':15}|\n")
+    file.write(f"|------:|{'-'*60}|{'-'*15}|\n")
+    
+    files = [f for f in sorted(listdir('.')) if "projecteuler" in f and "000" not in f]
+    for i in range(1,1000000):
+        status = None
+        fn = ""
+        for f in [f for f in files if f"{i:03d}" in f]:
+            fn = f
+            with open(f,'r') as F:
+                try:
+                    contents = "\n".join(F.readlines())
+                    status = re.search(r'STATUS:\s+(\S+)\n',contents)[1]
+                except:
+                    status = "done"
+        if status == None:
+            status = "not-attempted"
+    
+        http = str(urllib.request.urlopen(f"https://projecteuler.net/problem={i}").read())
+        title = unescape(re.search(r'<h2>(.+)</h2>',http)[1])
+        if title == "Problems Archives":
+            break
+        if status == "not-attempted":
+            file.write(f"|{i}|[{title}](https://projecteuler.net/problem={i})|{status}|\n")
+        else:
+            file.write(f"|{i}|[{title}](https://projecteuler.net/problem={i})|[{status}](./{fn})|\n")
+    
 import sys
 from subprocess import call
 if len(sys.argv)>0:
