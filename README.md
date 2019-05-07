@@ -69,7 +69,7 @@
 |65|[Convergents of e](https://projecteuler.net/problem=65)|not-attempted|
 |66|[Diophantine equation](https://projecteuler.net/problem=66)|not-attempted|
 |67|[Maximum path sum II](https://projecteuler.net/problem=67)|[done](./projecteuler067.py)|
-|68|[Magic 5-gon ring](https://projecteuler.net/problem=68)|not-attempted|
+|68|[Magic 5-gon ring](https://projecteuler.net/problem=68)|[done](./projecteuler068.jpg)|
 |69|[Totient maximum](https://projecteuler.net/problem=69)|not-attempted|
 |70|[Totient permutation](https://projecteuler.net/problem=70)|not-attempted|
 |71|[Ordered fractions](https://projecteuler.net/problem=71)|not-attempted|

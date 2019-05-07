@@ -43,5 +43,5 @@ from subprocess import call
 if len(sys.argv)>0:
     message = " ".join(sys.argv[1:])
     call(["/usr/bin/env", "git", "add", "."],stdout=sys.stderr)
-    call(["/usr/bin/env", "git", "commit", "-a", "-m", f'"{message}"'],stdout=sys.stderr)
+    call(["/usr/bin/env", "git", "commit", "-a", "-m", f'{message}'],stdout=sys.stderr)
     call(["/usr/bin/env", "git", "push"],stdout=sys.stderr)
