@@ -15,7 +15,7 @@ from math import sqrt
 
 
 
-lim = 10**7
+lim = 10**10
 sqrtlim = int(sqrt(lim))
 
 gen = set()

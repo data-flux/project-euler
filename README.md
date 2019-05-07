@@ -47,9 +47,9 @@
 |43|[Sub-string divisibility](https://projecteuler.net/problem=43)|[done](./projecteuler043.py)|
 |44|[Pentagon numbers](https://projecteuler.net/problem=44)|[done](./projecteuler044.py)|
 |45|[Triangular, pentagonal, and hexagonal](https://projecteuler.net/problem=45)|[done](./projecteuler045.py)|
-|46|[Goldbach\'s other conjecture](https://projecteuler.net/problem=46)|not-attempted|
-|47|[Distinct primes factors](https://projecteuler.net/problem=47)|not-attempted|
-|48|[Self powers](https://projecteuler.net/problem=48)|not-attempted|
+|46|[Goldbach\'s other conjecture](https://projecteuler.net/problem=46)|[done](./projecteuler046.py)|
+|47|[Distinct primes factors](https://projecteuler.net/problem=47)|[done](./projecteuler047.py)|
+|48|[Self powers](https://projecteuler.net/problem=48)|[done](./projecteuler048.py)|
 |49|[Prime permutations](https://projecteuler.net/problem=49)|not-attempted|
 |50|[Consecutive prime sum](https://projecteuler.net/problem=50)|not-attempted|
 |51|[Prime digit replacements](https://projecteuler.net/problem=51)|not-attempted|
