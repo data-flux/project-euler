@@ -2,9 +2,9 @@
 """
 PROBLEM: 668
 AUTHOR:  Dirk Meijer
-STATUS:  experimentation
+STATUS:  needs-optimization
 EXPLANATION:
-    answer should be correct, but takes about 24h to calculate.
+    answer should be correct, but takes too much time and memory to calculate.
 """
 
 from Euler.tictoc import tic,toc
@@ -12,33 +12,35 @@ from Euler.eprint import eprint
 from sympy import sieve
 from math import sqrt
 
-lim = 10_000_000_000
+
+
+
+lim = 10**7
 sqrtlim = int(sqrt(lim))
 
-S = 1 #because we're not generating 1
 gen = set()
+S = 1
 
 def nextgen():
     global gen,S
-    #print(gen)
+    #eprint(gen)
     newgen = set()
     S += len(gen)
-    for n,maxprime in gen:
-        for p in sieve.primerange(1,sqrtlim):
-            if n*p > lim:
-                break
-            newgen.add((n*p,max(maxprime,p)))
-    gen = newgen
+    for n in gen:
+        for p in sieve.primerange(1,min(sqrtlim,lim//n+1)):
+            newgen.add(p*n)
+    del gen
+    gen = newgen 
 
 if __name__=="__main__":
     tic()
     sieve.extend(sqrtlim)
     for p1 in sieve.primerange(1,sqrtlim):
-        for p2 in sieve.primerange(p1,sqrtlim):
-            for p3 in sieve.primerange(p2,sqrtlim):
-                a = p1*p2*p3
-                if a <= 100 and p3*p3<a:
-                    gen.add((a,p3))
+        for p2 in sieve.primerange(p1,min(sqrtlim,lim//p1+1)):
+            if p1*p2 > lim:
+                break
+            for p3 in sieve.primerange(p2,min(sqrtlim,lim//(p1*p2)+1,p1*p2+1)):
+                gen.add(p1*p2*p3)
     while len(gen)>0:
         nextgen()        
     print(S)

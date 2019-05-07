@@ -669,4 +669,4 @@
 |665|[Proportionate Nim](https://projecteuler.net/problem=665)|not-attempted|
 |666|[Polymorphic Bacteria](https://projecteuler.net/problem=666)|not-attempted|
 |667|[Moving Pentagon](https://projecteuler.net/problem=667)|[experimentation](./projecteuler667.py)|
-|668|[Square root smooth Numbers](https://projecteuler.net/problem=668)|[experimentation](./projecteuler668.py)|
+|668|[Square root smooth Numbers](https://projecteuler.net/problem=668)|[needs-optimization](./projecteuler668.py)|

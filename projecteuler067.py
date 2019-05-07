@@ -1,6 +1,6 @@
 #!/usr/bin/env python3.6
 """
-PROBLEM: 018
+PROBLEM: 067
 AUTHOR:  Dirk Meijer
 STATUS:  done
 EXPLANATION:
