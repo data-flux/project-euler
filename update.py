@@ -39,7 +39,7 @@ with open('README.md','w') as file:
         else:
             file.write(f"|{i}|[{title}](https://projecteuler.net/problem={i})|[{status}](./{fn})|\n")
         if i%100==0:
-            file.write("\n\n## 1-99\n\n")
+            file.write("\n\n## {i}-{i+99}\n\n")
             file.write(f"|Problem|{'Title':60}|{'Status':15}|\n")
             file.write(f"|------:|{'-'*60}|{'-'*15}|\n")
     print()
