@@ -1,5 +1,7 @@
 # Project Euler
 
+## 1-99
+
 |Problem|Title                                                       |Status         |
 |------:|------------------------------------------------------------|---------------|
 |1|[Multiples of 3 and 5](https://projecteuler.net/problem=1)|[done](./projecteuler001.py)|
@@ -102,6 +104,12 @@
 |98|[Anagramic squares](https://projecteuler.net/problem=98)|not-attempted|
 |99|[Largest exponential](https://projecteuler.net/problem=99)|not-attempted|
 |100|[Arranged probability](https://projecteuler.net/problem=100)|not-attempted|
+
+
+## 1-99
+
+|Problem|Title                                                       |Status         |
+|------:|------------------------------------------------------------|---------------|
 |101|[Optimum polynomial](https://projecteuler.net/problem=101)|not-attempted|
 |102|[Triangle containment](https://projecteuler.net/problem=102)|not-attempted|
 |103|[Special subset sums: optimum](https://projecteuler.net/problem=103)|not-attempted|
@@ -202,6 +210,12 @@
 |198|[Ambiguous Numbers](https://projecteuler.net/problem=198)|not-attempted|
 |199|[Iterative Circle Packing](https://projecteuler.net/problem=199)|not-attempted|
 |200|[Find the 200th prime-proof sqube containing the contiguous sub-string "200"](https://projecteuler.net/problem=200)|not-attempted|
+
+
+## 1-99
+
+|Problem|Title                                                       |Status         |
+|------:|------------------------------------------------------------|---------------|
 |201|[Subsets with a unique sum](https://projecteuler.net/problem=201)|not-attempted|
 |202|[Laserbeam](https://projecteuler.net/problem=202)|not-attempted|
 |203|[Squarefree Binomial Coefficients](https://projecteuler.net/problem=203)|not-attempted|
@@ -302,6 +316,12 @@
 |298|[Selective Amnesia](https://projecteuler.net/problem=298)|not-attempted|
 |299|[Three similar triangles](https://projecteuler.net/problem=299)|not-attempted|
 |300|[Protein folding](https://projecteuler.net/problem=300)|not-attempted|
+
+
+## 1-99
+
+|Problem|Title                                                       |Status         |
+|------:|------------------------------------------------------------|---------------|
 |301|[Nim](https://projecteuler.net/problem=301)|not-attempted|
 |302|[Strong Achilles Numbers](https://projecteuler.net/problem=302)|not-attempted|
 |303|[Multiples with small digits](https://projecteuler.net/problem=303)|not-attempted|
@@ -402,6 +422,12 @@
 |398|[Cutting rope](https://projecteuler.net/problem=398)|not-attempted|
 |399|[Squarefree Fibonacci Numbers](https://projecteuler.net/problem=399)|not-attempted|
 |400|[Fibonacci tree game](https://projecteuler.net/problem=400)|not-attempted|
+
+
+## 1-99
+
+|Problem|Title                                                       |Status         |
+|------:|------------------------------------------------------------|---------------|
 |401|[Sum of squares of divisors](https://projecteuler.net/problem=401)|not-attempted|
 |402|[Integer-valued polynomials](https://projecteuler.net/problem=402)|not-attempted|
 |403|[Lattice points enclosed by parabola and line](https://projecteuler.net/problem=403)|not-attempted|
@@ -502,6 +528,12 @@
 |498|[Remainder of polynomial division](https://projecteuler.net/problem=498)|not-attempted|
 |499|[St. Petersburg Lottery](https://projecteuler.net/problem=499)|not-attempted|
 |500|[Problem 500!!!](https://projecteuler.net/problem=500)|not-attempted|
+
+
+## 1-99
+
+|Problem|Title                                                       |Status         |
+|------:|------------------------------------------------------------|---------------|
 |501|[Eight Divisors](https://projecteuler.net/problem=501)|not-attempted|
 |502|[Counting Castles](https://projecteuler.net/problem=502)|not-attempted|
 |503|[Compromise or persist](https://projecteuler.net/problem=503)|not-attempted|
@@ -602,6 +634,12 @@
 |598|[Split Divisibilities](https://projecteuler.net/problem=598)|not-attempted|
 |599|[Distinct Colourings of a Rubik\'s Cube](https://projecteuler.net/problem=599)|not-attempted|
 |600|[Integer sided equiangular hexagons](https://projecteuler.net/problem=600)|not-attempted|
+
+
+## 1-99
+
+|Problem|Title                                                       |Status         |
+|------:|------------------------------------------------------------|---------------|
 |601|[Divisibility streaks](https://projecteuler.net/problem=601)|not-attempted|
 |602|[Product of Head Counts](https://projecteuler.net/problem=602)|not-attempted|
 |603|[Substring sums of prime concatenations](https://projecteuler.net/problem=603)|not-attempted|
