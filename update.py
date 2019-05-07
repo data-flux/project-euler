@@ -8,7 +8,6 @@ import sys
 with open('README.md','w') as file:
 
     file.write("# Project Euler\n\n")
-    file.write("## 1-100\n\n")
     file.write(f"|Problem|{'Title':60}|{'Status':15}|\n")
     file.write(f"|------:|{'-'*60}|{'-'*15}|\n")
     
@@ -38,10 +37,6 @@ with open('README.md','w') as file:
             file.write(f"|{i}|[{title}](https://projecteuler.net/problem={i})|{status}|\n")
         else:
             file.write(f"|{i}|[{title}](https://projecteuler.net/problem={i})|[{status}](./{fn})|\n")
-        if i%100==0:
-            file.write(f"\n\n## {i+1}-{i+100}\n\n")
-            file.write(f"|Problem|{'Title':60}|{'Status':15}|\n")
-            file.write(f"|------:|{'-'*60}|{'-'*15}|\n")
     print()
     
 from subprocess import call
