@@ -34,6 +34,9 @@ def pandigital(n):
         return False
     return True
 
+def ispermutation(n1,n2):
+    return sorted(intToDigits(n1)) == sorted(intToDigits(n2))
+
 if __name__ == "__main__":
     n = 5001
     print(n)
