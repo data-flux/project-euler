@@ -51,10 +51,10 @@
 |47|[Distinct primes factors](https://projecteuler.net/problem=47)|[done](./projecteuler047.py)|
 |48|[Self powers](https://projecteuler.net/problem=48)|[done](./projecteuler048.py)|
 |49|[Prime permutations](https://projecteuler.net/problem=49)|[done](./projecteuler049.py)|
-|50|[Consecutive prime sum](https://projecteuler.net/problem=50)|[needs-optimization](./projecteuler050.py)|
-|51|[Prime digit replacements](https://projecteuler.net/problem=51)|not-attempted|
-|52|[Permuted multiples](https://projecteuler.net/problem=52)|not-attempted|
-|53|[Combinatoric selections](https://projecteuler.net/problem=53)|not-attempted|
+|50|[Consecutive prime sum](https://projecteuler.net/problem=50)|[done](./projecteuler050.py)|
+|51|[Prime digit replacements](https://projecteuler.net/problem=51)|[done](./projecteuler051.py)|
+|52|[Permuted multiples](https://projecteuler.net/problem=52)|[done](./projecteuler052.py)|
+|53|[Combinatoric selections](https://projecteuler.net/problem=53)|[done](./projecteuler053.py)|
 |54|[Poker hands](https://projecteuler.net/problem=54)|not-attempted|
 |55|[Lychrel numbers](https://projecteuler.net/problem=55)|not-attempted|
 |56|[Powerful digit sum](https://projecteuler.net/problem=56)|not-attempted|
@@ -669,5 +669,5 @@
 |665|[Proportionate Nim](https://projecteuler.net/problem=665)|not-attempted|
 |666|[Polymorphic Bacteria](https://projecteuler.net/problem=666)|not-attempted|
 |667|[Moving Pentagon](https://projecteuler.net/problem=667)|[experimentation](./projecteuler667.py)|
-|668|[Square root smooth Numbers](https://projecteuler.net/problem=668)|[needs-optimization](./projecteuler668.py)|
+|668|[Square root smooth Numbers](https://projecteuler.net/problem=668)|[experimentation](./projecteuler668.py)|
 |669|[The King\'s Banquet](https://projecteuler.net/problem=669)|not-attempted|

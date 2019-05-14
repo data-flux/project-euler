@@ -2,9 +2,10 @@
 """
 PROBLEM: 668
 AUTHOR:  Dirk Meijer
-STATUS:  needs-optimization
+STATUS:  experimentation
 EXPLANATION:
     answer should be correct, but takes too much time and memory to calculate.
+    update: answer is wrong.
 """
 
 from Euler.tictoc import tic,toc

@@ -2,7 +2,7 @@
 """
 PROBLEM: 050
 AUTHOR:  Dirk Meijer
-STATUS:  needs-optimization
+STATUS:  done
 EXPLANATION:
     naive solution that searches for possible solutions at a high sequence length,
     then reduces that length when it fails to find a solution.
@@ -18,7 +18,7 @@ if __name__=="__main__":
     upper = 1_000_000
     primes = list(primerange(1,upper))
     for seqlen in range(len(primes)//100,1,-1):
-        for end in range(len(primes),seqlen,-1):
+        for end in range(len(primes)//100,seqlen,-1):
             cs = sum(primes[end-seqlen:end])
             if cs<upper and cs in primes:
                 print(cs)
