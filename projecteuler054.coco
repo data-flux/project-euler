@@ -2,9 +2,9 @@
 """
 PROBLEM: 054
 AUTHOR:  Dirk Meijer
-STATUS:  
+STATUS:  done
 EXPLANATION:
-    
+    functional programming and pseudo classes
 """
 
 from Euler.tictoc import tic,toc

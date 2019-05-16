@@ -55,7 +55,7 @@
 |51|[Prime digit replacements](https://projecteuler.net/problem=51)|[done](./projecteuler051.py)|
 |52|[Permuted multiples](https://projecteuler.net/problem=52)|[done](./projecteuler052.py)|
 |53|[Combinatoric selections](https://projecteuler.net/problem=53)|[done](./projecteuler053.py)|
-|54|[Poker hands](https://projecteuler.net/problem=54)|[EXPLANATION:](./projecteuler054.coco)|
+|54|[Poker hands](https://projecteuler.net/problem=54)|[done](./projecteuler054.coco)|
 |55|[Lychrel numbers](https://projecteuler.net/problem=55)|not-attempted|
 |56|[Powerful digit sum](https://projecteuler.net/problem=56)|not-attempted|
 |57|[Square root convergents](https://projecteuler.net/problem=57)|not-attempted|
