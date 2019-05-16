@@ -1,0 +1,24 @@
+#!/usr/bin/env coconut-run
+"""
+PROBLEM: 056
+AUTHOR:  Dirk Meijer
+STATUS:  done
+EXPLANATION:
+    - a and b are both going to be high, search only in range (90,99]
+"""
+
+from Euler.tictoc import tic,toc
+from Euler.eprint import eprint
+from Euler.digits import intToDigits
+
+digitsum = sum .. intToDigits .. pow
+
+if __name__=="__main__":
+    tic()
+    m = 0
+    for a in range(99,90,-1):
+        for b in range(99,90,-1):
+            m = max(m,digitsum(a,b))
+    print(m)
+    toc()
+    exit()
