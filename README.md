@@ -59,7 +59,7 @@
 |55|[Lychrel numbers](https://projecteuler.net/problem=55)|[done](./projecteuler055.coco)|
 |56|[Powerful digit sum](https://projecteuler.net/problem=56)|[done](./projecteuler056.coco)|
 |57|[Square root convergents](https://projecteuler.net/problem=57)|[done](./projecteuler057.coco)|
-|58|[Spiral primes](https://projecteuler.net/problem=58)|not-attempted|
+|58|[Spiral primes](https://projecteuler.net/problem=58)|[done](./projecteuler058.coco)|
 |59|[XOR decryption](https://projecteuler.net/problem=59)|not-attempted|
 |60|[Prime pair sets](https://projecteuler.net/problem=60)|not-attempted|
 |61|[Cyclical figurate numbers](https://projecteuler.net/problem=61)|not-attempted|

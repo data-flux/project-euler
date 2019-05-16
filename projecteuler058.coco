@@ -1,0 +1,40 @@
+#!/usr/bin/env coconut-run
+"""
+PROBLEM: 058
+AUTHOR:  Dirk Meijer
+STATUS:  done
+EXPLANATION:
+    busting out Miller-Rabin pseudo-primality because regular prime testing takes too long.
+"""
+
+from Euler.tictoc import tic,toc
+from Euler.eprint import eprint
+from Euler.primes import isprime
+
+def diag():
+    i=1
+    l=2
+    while True:
+        for _ in range(4):
+            i += l
+            yield i
+        l += 2
+
+if __name__=="__main__":
+    tic()
+    primes = 0
+    total = 0
+    layer = 0
+    gen = diag()
+    while True:
+        for _ in range(4):
+            n = next(gen)
+            primes += isprime(n)
+        total += 4
+        layer += 1
+        if primes/total < .1:
+            print(layer*2-1)
+            break
+        
+    toc()
+    exit()
