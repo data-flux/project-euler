@@ -1,0 +1,174 @@
+#!/usr/bin/env coconut-run
+"""
+PROBLEM: 054
+AUTHOR:  Dirk Meijer
+STATUS:  
+EXPLANATION:
+    
+"""
+
+from Euler.tictoc import tic,toc
+from Euler.eprint import eprint
+import requests
+
+data card(value,suit):
+    def __new__(cls,value,suit=None):
+        match [cardstring is str] in [value]:
+            try:
+                v = int(value[0])
+            except:
+                v = "TJQKA".index(value[0])+10
+            s = "SHCD".index(value[1])
+            return makedata(cls,v,s)
+        match [value is int, suit is int] in [value,suit]:
+            return makedata(cls,value,suit)
+        match [c is card] in [value]:
+            return c
+
+    def __str__(self):
+        V = ["","","Two","Three","Four","Five","Six","Seven","Eight","Nine",
+                "Ten","Jack","Queen","King","Ace"]
+        S = ["Spades","Hearts","Clubs","Diamonds"]
+        return f"{V[self.value]} of {S[self.suit]}"
+
+    def __eq__(self,other is card):
+        return self.value == other.value
+    def __lt__(self,other is card):
+        return self.value < other.value
+    def __gt__(self,other is card):
+        return self.value > other.value
+
+data hand(*cards):
+    def __new__(cls,*cards):
+        return makedata(cls,*sorted(map(card,cards))) # ensure everything in hand is a card
+    def __str__(self):
+        return "\n".join(self.cards |> map$(str))
+
+    def flush(self):
+        if all(c.suit == self.cards[0].suit for c in self.cards[1:]):
+            return self.cards[4].value
+        return False
+    def straight(self):
+        val = self.cards[0].value
+        for c in self.cards[1:]:
+            if c.value != (val+1):
+                return False
+            val += 1
+        return val
+    def straightflush(self):
+        return self.flush() and self.straight()
+    def royalflush(self):
+        return self.straightflush()==14
+    def fourofakind(self):
+        if all(c.value == self.cards[0].value for c in self.cards[1:4]):
+            return self.cards[0].value
+        elif all(c.value == self.cards[4].value for c in self.cards[1:4]):
+            return self.cards[4].value
+        return False
+    def fullhouse(self):
+        if self.cards[0]!=self.cards[1] or self.cards[3]!=self.cards[4]:
+            return False
+        if self.cards[2] in (self.cards[1], self.cards[3]):
+            return self.cards[2].value
+    def threeofakind(self):
+        if all(c.value == self.cards[0].value for c in self.cards[1:3]):
+            return self.cards[0].value
+        elif all(c.value == self.cards[1].value for c in self.cards[2:4]):
+            return self.cards[1].value
+        elif all(c.value == self.cards[4].value for c in self.cards[2:4]):
+            return self.cards[4].value
+        return False
+    def twopair(self):
+        if self.cards[0]==self.cards[1] and self.cards[2]==self.cards[3]:
+            return (self.cards[2].value,self.cards[0].value)
+        elif self.cards[0]==self.cards[1] and self.cards[3]==self.cards[4]:
+            return (self.cards[3].value,self.cards[0].value)
+        elif self.cards[1]==self.cards[2] and self.cards[3]==self.cards[4]:
+            return (self.cards[3].value,self.cards[1].value)
+        return False
+    def pair(self):
+        for i in range(3,-1,-1):
+            if self.cards[i]==self.cards[i+1]:
+                return self.cards[i].value
+        return False
+
+    def __gt__(self,other is hand):
+        if other.royalflush():
+            return False
+        if self.royalflush(): return True
+        if other.straightflush():
+            if self.straightflush() > other.straightflush(): return True
+            return False
+        if self.straightflush(): return True
+        if other.fourofakind(): 
+            if self.fourofakind() > other.fourofakind(): return True
+            return False
+        if self.fourofakind(): return True
+        if other.fullhouse():
+            if self.fullhouse() > other.fullhouse(): return True
+            return False
+        if self.fullhouse(): return True
+        if other.flush():
+            if self.flush() > other.flush(): return True
+            return False
+        if self.flush(): return True
+        if other.straight():
+            if self.straight() > other.straight(): return True
+            return False
+        if self.straight(): return True
+        if other.threeofakind():
+            if self.threeofakind() > other.threeofakind(): return True
+            return False
+        if self.threeofakind(): return True
+        if other.twopair():
+            if self.twopair():
+                if self.twopair()[0] == other.twopair()[0]:
+                    if self.twopair()[1] == other.twopair()[1]:
+                        hc1 = [c for c in self.cards if c.value not in self.twopair()]
+                        hc2 = [c for c in other.cards if c.value not in other.twopair()]
+                        return hc1 > hc2
+                    return self.twopair()[1] > other.twopair()[1]
+                return self.twopair()[0] > other.twopair()[0]
+            return False
+        if self.twopair(): return True
+        if other.pair():
+            if self.pair():
+                if self.pair() == other.pair():
+                    for hc1,hc2 in zip(
+                            [c1 for c1 in reversed(self.cards) if c1.value != self.pair()],
+                            [c2 for c2 in reversed(other.cards) if c2.value != other.pair()]):
+                        if hc1 != hc2:
+                            return hc1 > hc2
+                return self.pair() > other.pair()
+            return False
+        if self.pair(): return True
+        for hc1,hc2 in zip(
+                [c1 for c1 in reversed(self.cards)],
+                [c2 for c2 in reversed(other.cards)]):
+            if hc1 != hc2:
+                return hc1 > hc2
+        raise Exception("Could not resolve winner!")
+
+
+
+        
+
+
+
+
+poker = ("https://projecteuler.net/project/resources/p054_poker.txt" |> 
+        requests.get |> # http request
+        .content     |> # contents only, no http header
+        .decode()    |> # convert from bytes to string
+        .rstrip()    |> # remove trailing newline
+        .split("\n") |> # split up into rounds
+        map$(.split(" ")) |> # split up into cardstring
+        map$(x-> (hand(*x[:5]),hand(*x[5:])))  #turn into separate hands
+) |> list
+
+
+if __name__=="__main__":
+    tic()
+    print(sum(h1>h2 for h1,h2 in poker))
+    toc()
+    exit()
