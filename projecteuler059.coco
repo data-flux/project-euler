@@ -1,16 +1,53 @@
-#!/usr/bin/env python3.6
+#!/usr/bin/env coconut-run
 """
-PROBLEM: 000
+PROBLEM: 059
 AUTHOR:  Dirk Meijer
-STATUS:  {experimentation, in-progress, needs-optimization, done}
+STATUS:  done
 EXPLANATION:
-    <explanation here>
+    ezpz
 """
 
 from Euler.tictoc import tic,toc
 from Euler.eprint import eprint
+import requests
+
+input = (
+        requests 
+     |> .get("https://projecteuler.net/project/resources/p059_cipher.txt")
+     |> .content
+     |> .decode()
+     |> .rstrip()
+     |> .split(",")
+     |> map$(int)
+     |> list
+)
+
+def decode(input,key):
+    mlength = len(input)
+    repkey = (key)*(mlength//3+1)
+    return map(c -> c[0]^c[1],zip(input,repkey))
+
+def viable(text):
+    if " the " not in text:
+        return False
+    if " and " not in text:
+        return False
+    if " of " not in text:
+        return False
+    return True
+
 
 if __name__=="__main__":
     tic()
-    toc()
-    exit()
+    for k1 in range(97,123):
+        for k2 in range(97,123):
+            for k3 in range(97,123):
+                d = list(decode(input,(k1,k2,k3)))
+                text = "".join(map(chr,d))
+                if viable(text):
+                    print(text)
+                    print(sum(d))
+                    toc()
+                    exit()
+                    
+

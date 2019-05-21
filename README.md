@@ -60,7 +60,7 @@
 |56|[Powerful digit sum](https://projecteuler.net/problem=56)|[done](./projecteuler056.coco)|
 |57|[Square root convergents](https://projecteuler.net/problem=57)|[done](./projecteuler057.coco)|
 |58|[Spiral primes](https://projecteuler.net/problem=58)|[done](./projecteuler058.coco)|
-|59|[XOR decryption](https://projecteuler.net/problem=59)|not-attempted|
+|59|[XOR decryption](https://projecteuler.net/problem=59)|[done](./projecteuler059.coco)|
 |60|[Prime pair sets](https://projecteuler.net/problem=60)|not-attempted|
 |61|[Cyclical figurate numbers](https://projecteuler.net/problem=61)|not-attempted|
 |62|[Cubic permutations](https://projecteuler.net/problem=62)|not-attempted|
