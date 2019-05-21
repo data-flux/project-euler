@@ -1,0 +1,53 @@
+#!/usr/bin/env coconut-run
+"""
+PROBLEM: 108
+AUTHOR:  Dirk Meijer
+STATUS:  done
+EXPLANATION:
+    assuming y>=x
+    x \in (n,2n]
+    n is bound to have a lot of prime factors
+    y=(x*n)/(x-n)
+
+    - if n is a prime, the # solution is 2.
+    - if we multiply n by a prime,
+        the # solutions S becomes:
+        S <- ((2k+1)S-1)/2k-1
+        where k is how often that primes appears in the new n.
+
+    making the assumption that every factor appears a maximum of 3 times,
+    and the miximum prime factor is 41, we calculate all possible primordials
+    and take the lowest that exceeds 1000 solutions
+"""
+
+from Euler.tictoc import tic,toc
+from Euler.eprint import eprint
+
+sol = n -> sum(x*n%(x-n)==0 for x in range(n+1,2*n+1))
+prod = reduce$(*)
+primordial = f-> prod(map(x->pow(*x),f.items()))
+
+if __name__=="__main__":
+    tic()
+    primes = [2,3,5,7,11,13,17,19,23,29,31,37,41]
+    factors = {p:0 for p in primes}
+    i_pr = 0
+    S = 1
+    best = 2000
+    bestn = factors |> primordial
+    for _ in range(3):
+        while S<1000:
+            factors[primes[i_pr]] += 1 #increase the current prime factor by 1
+            k = factors[primes[i_pr]] 
+            lastS = S
+            S = ((2*k+1)*S-1)//(2*k-1) #determine the new number of solutions
+            i_pr += 1 #continue to next prime
+        if S < best:
+            best = S
+            bestn = factors |> primordial
+        factors[primes[i_pr-1]] -= 1
+        i_pr = 0
+        S = lastS
+    print(bestn)
+    toc()
+    exit()

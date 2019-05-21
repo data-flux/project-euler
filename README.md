@@ -109,9 +109,9 @@
 |105|[Special subset sums: testing](https://projecteuler.net/problem=105)|not-attempted|
 |106|[Special subset sums: meta-testing](https://projecteuler.net/problem=106)|not-attempted|
 |107|[Minimal network](https://projecteuler.net/problem=107)|not-attempted|
-|108|[Diophantine reciprocals I](https://projecteuler.net/problem=108)|not-attempted|
+|108|[Diophantine reciprocals I](https://projecteuler.net/problem=108)|[done](./projecteuler108.coco)|
 |109|[Darts](https://projecteuler.net/problem=109)|not-attempted|
-|110|[Diophantine reciprocals II](https://projecteuler.net/problem=110)|not-attempted|
+|110|[Diophantine reciprocals II](https://projecteuler.net/problem=110)|[done](./projecteuler110.coco)|
 |111|[Primes with runs](https://projecteuler.net/problem=111)|not-attempted|
 |112|[Bouncy numbers](https://projecteuler.net/problem=112)|not-attempted|
 |113|[Non-bouncy numbers](https://projecteuler.net/problem=113)|not-attempted|
@@ -671,3 +671,5 @@
 |667|[Moving Pentagon](https://projecteuler.net/problem=667)|[experimentation](./projecteuler667.py)|
 |668|[Square root smooth Numbers](https://projecteuler.net/problem=668)|[experimentation](./projecteuler668.py)|
 |669|[The King\'s Banquet](https://projecteuler.net/problem=669)|not-attempted|
+|670|[Colouring a Strip](https://projecteuler.net/problem=670)|not-attempted|
+|671|[Colouring a Loop](https://projecteuler.net/problem=671)|not-attempted|
