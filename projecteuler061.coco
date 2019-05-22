@@ -1,0 +1,78 @@
+#!/usr/bin/env coconut-run
+"""
+PROBLEM: 061
+AUTHOR:  Dirk Meijer
+STATUS:  done
+EXPLANATION:
+    get next number from a union of available sets, then remove the set the number is from
+    from the sets to get the next numbers from.
+    Not checking if numbers are part of multiple sets, might be an issue for similar problems,
+    but not for this one.
+"""
+
+from Euler.tictoc import tic,toc
+from Euler.eprint import eprint
+from Euler.digits import intToDigits,digitsToInt
+
+def cyclic(n1,n2):
+    d1 = intToDigits(n1)
+    d2 = intToDigits(n2)
+    return d1[-2:]==d2[:2]
+
+
+if __name__=="__main__":
+    tic()
+
+    triangle   = frozenset( n*(  n+1)//2 for n in range(45,141) )
+    square     = frozenset( n*(  n  )    for n in range(32,100) )
+    pentagonal = frozenset( n*(3*n-1)//2 for n in range(26, 82) )
+    hexagonal  = frozenset( n*(2*n-1)    for n in range(23, 71) )
+    heptagonal = frozenset( n*(5*n-3)//2 for n in range(21, 64) )
+    octagonal  = frozenset( n*(3*n-2)    for n in range(19, 59) )
+
+    rem1 = set((square,pentagonal,hexagonal,heptagonal,octagonal))
+
+    for n1 in triangle:
+        for n2 in set().union(*rem1):
+            if not cyclic(n1,n2):
+                continue
+            for s2 in rem1:
+                if n2 in s2:
+                    rem2 = rem1 - {s2}
+                    break
+            for n3 in set().union(*rem2):
+                if n3 in [n1,n2]:
+                    continue
+                if not cyclic(n2,n3):
+                    continue
+                for s3 in rem2:
+                    if n3 in s3:
+                        rem3 = rem2 - {s3}
+                        break
+                for n4 in set().union(*rem3):
+                    if n4 in [n1,n2,n3]:
+                        continue
+                    if not cyclic(n3,n4):
+                        continue
+                    for s4 in rem3:
+                        if n4 in s4:
+                            rem4 = rem3 - {s4}
+                            break
+                    for n5 in set().union(*rem4):
+                        if n5 in [n1,n2,n3,n4]:
+                            continue
+                        if not cyclic(n4,n5):
+                            continue
+                        for s5 in rem4:
+                            if n5 in s5:
+                                rem5 = rem4 - {s5}
+                                break
+                        for n6 in set().union(*rem5):
+                            if n6 in [n1,n2,n3,n4,n5]:
+                                continue
+                            if not (cyclic(n5,n6) and cyclic(n6,n1)):
+                                continue
+                            eprint(n1,n2,n3,n4,n5,n6)
+                            print(n1+n2+n3+n4+n5+n6)
+                            toc()
+                            exit()

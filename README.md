@@ -61,9 +61,9 @@
 |57|[Square root convergents](https://projecteuler.net/problem=57)|[done](./projecteuler057.coco)|
 |58|[Spiral primes](https://projecteuler.net/problem=58)|[done](./projecteuler058.coco)|
 |59|[XOR decryption](https://projecteuler.net/problem=59)|[done](./projecteuler059.coco)|
-|60|[Prime pair sets](https://projecteuler.net/problem=60)|[done](./projecteuler060.coco)|
-|61|[Cyclical figurate numbers](https://projecteuler.net/problem=61)|not-attempted|
-|62|[Cubic permutations](https://projecteuler.net/problem=62)|not-attempted|
+|60|[Prime pair sets](https://projecteuler.net/problem=60)|[done](./projecteuler060.py)|
+|61|[Cyclical figurate numbers](https://projecteuler.net/problem=61)|[done](./projecteuler061.coco)|
+|62|[Cubic permutations](https://projecteuler.net/problem=62)|[needs-optimization](./projecteuler062.coco)|
 |63|[Powerful digit counts](https://projecteuler.net/problem=63)|not-attempted|
 |64|[Odd period square roots](https://projecteuler.net/problem=64)|not-attempted|
 |65|[Convergents of e](https://projecteuler.net/problem=65)|not-attempted|
