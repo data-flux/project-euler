@@ -49,7 +49,6 @@ with open('README.md','w') as file:
     file.write(f"|------:|{'-'*60}|{'-'*15}|\n")
     
     files = [f for f in sorted(listdir('.')) if "projecteuler" in f and "000" not in f]
-    print(problems)
     for i in range(1,last+1):
         status = None
         fn = ""
