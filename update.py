@@ -13,10 +13,11 @@ try:
     with open('problems.csv','r') as problemfile:
         reader = csv.reader(problemfile,delimiter=',',quotechar='"')
         *_,last = reader
-        http = str(urllib.request.urlopen(f"https://projecteuler.net/problem={int[last[0]]+1}").read())
+        http = urllib.request.urlopen(f"https://projecteuler.net/problem={int(last[0])+1}").read().decode('utf8')
         title = unescape(re.search(r'<h2>(.+)</h2>',http)[1])
         outdated = (title != "Problems Archives")
-except:
+except Exception as e:
+    print(e)
     outdated = True
 if outdated:
     problems = {}
@@ -40,7 +41,7 @@ else:
         problems = {}
         for r in reader:
             problems[r[0]] = r[1]
-        last = r[0]
+        last = int(r[0])
 
 with open('README.md','w') as file:
     file.write("# Project Euler\n\n")
