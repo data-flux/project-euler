@@ -66,7 +66,7 @@
 |62|[Cubic permutations](https://projecteuler.net/problem=62)|[done](./projecteuler062.py)|
 |63|[Powerful digit counts](https://projecteuler.net/problem=63)|[done](./projecteuler063.py)|
 |64|[Odd period square roots](https://projecteuler.net/problem=64)|[done](./projecteuler064.py)|
-|65|[Convergents of e](https://projecteuler.net/problem=65)|not-attempted|
+|65|[Convergents of e](https://projecteuler.net/problem=65)|[done](./projecteuler065.py)|
 |66|[Diophantine equation](https://projecteuler.net/problem=66)|not-attempted|
 |67|[Maximum path sum II](https://projecteuler.net/problem=67)|[done](./projecteuler067.py)|
 |68|[Magic 5-gon ring](https://projecteuler.net/problem=68)|[done](./projecteuler068.jpg)|
