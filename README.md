@@ -65,7 +65,7 @@
 |61|[Cyclical figurate numbers](https://projecteuler.net/problem=61)|[done](./projecteuler061.coco)|
 |62|[Cubic permutations](https://projecteuler.net/problem=62)|[needs-optimization](./projecteuler062.coco)|
 |63|[Powerful digit counts](https://projecteuler.net/problem=63)|[done](./projecteuler063.py)|
-|64|[Odd period square roots](https://projecteuler.net/problem=64)|not-attempted|
+|64|[Odd period square roots](https://projecteuler.net/problem=64)|[in-progress](./projecteuler064.coco)|
 |65|[Convergents of e](https://projecteuler.net/problem=65)|not-attempted|
 |66|[Diophantine equation](https://projecteuler.net/problem=66)|not-attempted|
 |67|[Maximum path sum II](https://projecteuler.net/problem=67)|[done](./projecteuler067.py)|
@@ -358,7 +358,7 @@
 |354|[Distances in a bee's honeycomb ](https://projecteuler.net/problem=354)|not-attempted|
 |355|[Maximal coprime subset](https://projecteuler.net/problem=355)|not-attempted|
 |356|[Largest roots of cubic polynomials](https://projecteuler.net/problem=356)|not-attempted|
-|357|[Prime generating integers](https://projecteuler.net/problem=357)|not-attempted|
+|357|[Prime generating integers](https://projecteuler.net/problem=357)|[done](./projecteuler357.py)|
 |358|[Cyclic numbers](https://projecteuler.net/problem=358)|not-attempted|
 |359|[Hilbert's New Hotel](https://projecteuler.net/problem=359)|not-attempted|
 |360|[Scary Sphere](https://projecteuler.net/problem=360)|not-attempted|
