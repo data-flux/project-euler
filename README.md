@@ -64,7 +64,7 @@
 |60|[Prime pair sets](https://projecteuler.net/problem=60)|[done](./projecteuler060.py)|
 |61|[Cyclical figurate numbers](https://projecteuler.net/problem=61)|[done](./projecteuler061.coco)|
 |62|[Cubic permutations](https://projecteuler.net/problem=62)|[needs-optimization](./projecteuler062.coco)|
-|63|[Powerful digit counts](https://projecteuler.net/problem=63)|not-attempted|
+|63|[Powerful digit counts](https://projecteuler.net/problem=63)|[done](./projecteuler063.py)|
 |64|[Odd period square roots](https://projecteuler.net/problem=64)|not-attempted|
 |65|[Convergents of e](https://projecteuler.net/problem=65)|not-attempted|
 |66|[Diophantine equation](https://projecteuler.net/problem=66)|not-attempted|
