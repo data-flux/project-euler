@@ -35,6 +35,7 @@ if outdated:
                 break
             writer.writerow([i,title])
             problems[i]=title
+    print()
 else:
     with open('problems.csv','r') as problemfile:
         reader = csv.reader(problemfile,delimiter=',',quotechar='"')
@@ -66,7 +67,6 @@ with open('README.md','w') as file:
             file.write(f"|{i}|[{problems[i]}](https://projecteuler.net/problem={i})|{status}|\n")
         else:
             file.write(f"|{i}|[{problems[i]}](https://projecteuler.net/problem={i})|[{status}](./{fn})|\n")
-    print()
     
 from subprocess import call
 if len(sys.argv)>0:
