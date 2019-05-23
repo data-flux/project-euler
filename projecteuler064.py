@@ -2,7 +2,7 @@
 """
 PROBLEM: 064
 AUTHOR:  Dirk Meijer
-STATUS:  in-progress
+STATUS:  done
 EXPLANATION:
     As soon as a_i is equal to 2*a_0, the period is starts over.
     fails on 139 and 151 currently.

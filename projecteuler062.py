@@ -2,7 +2,7 @@
 """
 PROBLEM: 062
 AUTHOR:  Dirk Meijer
-STATUS:  needs-optimization
+STATUS:  done
 EXPLANATION:
     straightforward search.
     knowing the lower limit reduces search time, but taking a naive approach
@@ -16,7 +16,7 @@ from Euler.digits import ispermutation,intToDigits
 
 if __name__=="__main__":
     tic()
-    lower=1
+    lower=4000
     upper=10000
     for n1 in range(lower,upper):
         c1 = n1*n1*n1

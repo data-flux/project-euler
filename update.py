@@ -10,7 +10,7 @@ import time
 import csv
 
 try:
-    with open('problems.csv','r') as problemfile:
+    with open('.problems.csv','r') as problemfile:
         reader = csv.reader(problemfile,delimiter=',',quotechar='"')
         *_,last = reader
         http = urllib.request.urlopen(f"https://projecteuler.net/problem={int(last[0])+1}").read().decode('utf8')
@@ -22,7 +22,7 @@ except Exception as e:
 if outdated:
     problems = {}
     print("Problem definitions outdated, updating...",end='')
-    with open("problems.csv","w",newline='') as problemfile:
+    with open(".problems.csv","w",newline='') as problemfile:
         writer = csv.writer(problemfile, delimiter=',', quotechar='"')
         for i in range(1,100000):
             if i%10==0:
@@ -37,7 +37,7 @@ if outdated:
             problems[i]=title
     print()
 else:
-    with open('problems.csv','r') as problemfile:
+    with open('.problems.csv','r') as problemfile:
         reader = csv.reader(problemfile,delimiter=',',quotechar='"')
         problems = {}
         for r in reader:
