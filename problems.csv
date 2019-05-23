@@ -37,13 +37,13 @@
 37,Truncatable primes
 38,Pandigital multiples
 39,Integer right triangles
-40,Champernowne\'s constant
+40,Champernowne's constant
 41,Pandigital prime
 42,Coded triangle numbers
 43,Sub-string divisibility
 44,Pentagon numbers
 45,"Triangular, pentagonal, and hexagonal"
-46,Goldbach\'s other conjecture
+46,Goldbach's other conjecture
 47,Distinct primes factors
 48,Self powers
 49,Prime permutations
@@ -145,13 +145,13 @@
 145,How many reversible numbers are there below one-billion?
 146,Investigating a Prime Pattern 
 147,Rectangles in cross-hatched grids
-148,Exploring Pascal\'s triangle
+148,Exploring Pascal's triangle
 149,Searching for a maximum-sum subsequence
 150,Searching a triangular array for a sub-triangle having minimum-sum
 151,Paper sheets of standard sizes: an expected-value problem
 152,Writing 1/2 as a sum of inverse squares
 153,Investigating Gaussian Integers
-154,Exploring Pascal\'s pyramid
+154,Exploring Pascal's pyramid
 155,Counting Capacitor Circuits
 156,Counting Digits
 157,Solving the diophantine equation <sup>1</sup>/<sub><var>a</var></sub>+<sup>1</sup>/<sub><var>b</var></sub>= <sup><var>p</var></sup>/<sub>10<sup><var>n</var></sup></sub>
@@ -245,7 +245,7 @@
 245,Coresilience
 246,Tangents to an ellipse
 247,Squares under a hyperbola
-248,Numbers for which Euler\xe2\x80\x99s totient function equals 13!
+248,Numbers for which Euler’s totient function equals 13!
 249,Prime Subset Sums
 250,250250
 251,Cardano Triplets
@@ -260,7 +260,7 @@
 260,Stone Game
 261,Pivotal Square Sums
 262,Mountain Range
-263,An engineers\' dream come true
+263,An engineers' dream come true
 264,Triangle Centres
 265,Binary Circles
 266,Pseudo Square Root
@@ -309,7 +309,7 @@
 309,Integer Ladders
 310,Nim Square
 311,Biclinic Integral Quadrilaterals
-312,Cyclic paths on Sierpi\xc5\x84ski graphs
+312,Cyclic paths on Sierpiński graphs
 313,Sliding game
 314,The Mouse on the Moon
 315,Digital root clocks
@@ -327,7 +327,7 @@
 327,Rooms of Doom
 328,Lowest-cost Search
 329,Prime Frog
-330,Euler\'s Number
+330,Euler's Number
 331,Cross flips
 332,Spherical triangles
 333,Special partitions
@@ -338,7 +338,7 @@
 338,Cutting Rectangular Grid Paper
 339,Peredur fab Efrawg
 340,Crazy Function
-341,Golomb\'s self-describing sequence
+341,Golomb's self-describing sequence
 342,The totient of a square is a cube
 343,Fractional Sequences
 344,Silver dollar game
@@ -346,21 +346,21 @@
 346,Strong Repunits
 347,Largest integer divisible by two primes
 348,Sum of a square and a cube
-349,Langton\'s ant
+349,Langton's ant
 350,Constraining the least greatest and the greatest least
 351,Hexagonal orchards
 352,Blood tests
 353,Risky moon
-354,Distances in a bee\'s honeycomb 
+354,Distances in a bee's honeycomb 
 355,Maximal coprime subset
 356,Largest roots of cubic polynomials
 357,Prime generating integers
 358,Cyclic numbers
-359,Hilbert\'s New Hotel
+359,Hilbert's New Hotel
 360,Scary Sphere
 361,Subsequence of Thue-Morse sequence
 362,Squarefree factors
-363,B\xc3\xa9zier Curves
+363,Bézier Curves
 364,Comfortable distance
 365,A huge binomial coefficient
 366,Stone Game III
@@ -413,7 +413,7 @@
 413,One-child Numbers
 414,Kaprekar constant
 415,Titanic sets
-416,A frog\'s trip
+416,A frog's trip
 417,Reciprocal cycles II
 418,Factorisation triples
 419,Look and say sequence
@@ -430,12 +430,12 @@
 430,Range flips
 431,Square Space Silo
 432,Totient sum
-433,Steps in Euclid\'s algorithm
+433,Steps in Euclid's algorithm
 434,Rigid graphs
 435,Polynomials of Fibonacci numbers
 436,Unfair wager
 437,Fibonacci primitive roots
-438,Integer part of polynomial equation\'s solutions
+438,Integer part of polynomial equation's solutions
 439,Sum of sum of divisors
 440,GCD and Tiling
 441,The inverse summation of coprime couples
@@ -461,7 +461,7 @@
 461,Almost Pi
 462,Permutation of 3-smooth numbers
 463,A weird recurrence relation
-464,M\xc3\xb6bius function and intervals
+464,Möbius function and intervals
 465,Polar polygons
 466,Distinct terms in a multiplication table
 467,Superinteger
@@ -519,7 +519,7 @@
 519,Tricoloured Coin Fountains
 520,Simbers
 521,Smallest prime factor
-522,Hilbert\'s Blackout
+522,Hilbert's Blackout
 523,First Sort I
 524,First Sort II
 525,Rolling Ellipse
@@ -542,8 +542,8 @@
 542,Geometric Progression with Maximum Sum
 543,Prime-Sum Numbers
 544,Chromatic Conundrum
-545,Faulhaber\'s Formulas
-546,The Floor\'s Revenge
+545,Faulhaber's Formulas
+546,The Floor's Revenge
 547,Distance of random points within hollow square laminae
 548,Gozinta Chains
 549,Divisibility of factorials
@@ -596,7 +596,7 @@
 596,Number of lattice points in a hyperball
 597,Torpids
 598,Split Divisibilities
-599,Distinct Colourings of a Rubik\'s Cube
+599,Distinct Colourings of a Rubik's Cube
 600,Integer sided equiangular hexagons
 601,Divisibility streaks
 602,Product of Head Counts
@@ -606,7 +606,7 @@
 606,Gozinta Chains II
 607,Marsh Crossing
 608,Divisor Sums
-609,\xcf\x80 sequences
+609,π sequences
 610,Roman Numerals II
 611,Hallway of square steps
 612,Friend numbers
@@ -666,6 +666,6 @@
 666,Polymorphic Bacteria
 667,Moving Pentagon
 668,Square root smooth Numbers
-669,The King\'s Banquet
+669,The King's Banquet
 670,Colouring a Strip
 671,Colouring a Loop

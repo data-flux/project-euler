@@ -2,6 +2,7 @@
 from os import listdir
 import re
 import urllib.request
+import urllib.parse
 from html import unescape
 import sys
 import os
@@ -26,7 +27,7 @@ if outdated:
             if i%10==0:
                 print('.',end='')
                 sys.stdout.flush()
-            http = str(urllib.request.urlopen(f"https://projecteuler.net/problem={i}").read())
+            http = urllib.request.urlopen(f"https://projecteuler.net/problem={i}").read().decode('utf8')
             title = unescape(re.search(r'<h2>(.+)</h2>',http)[1])
             if title == "Problems Archives":
                 last = i-1
