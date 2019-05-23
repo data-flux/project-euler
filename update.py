@@ -40,7 +40,7 @@ else:
         reader = csv.reader(problemfile,delimiter=',',quotechar='"')
         problems = {}
         for r in reader:
-            problems[r[0]] = r[1]
+            problems[int(r[0])] = r[1]
         last = int(r[0])
 
 with open('README.md','w') as file:
@@ -49,6 +49,7 @@ with open('README.md','w') as file:
     file.write(f"|------:|{'-'*60}|{'-'*15}|\n")
     
     files = [f for f in sorted(listdir('.')) if "projecteuler" in f and "000" not in f]
+    print(problems)
     for i in range(1,last+1):
         status = None
         fn = ""
