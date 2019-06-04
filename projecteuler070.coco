@@ -1,0 +1,48 @@
+#!/usr/bin/env coconut-run
+"""
+PROBLEM: 070
+AUTHOR:  Dirk Meijer
+STATUS:  done
+EXPLANATION:
+    n/phi(n) is minimized when n has few prime factors as phi(n) will be larger
+    in that case. 
+    n and phi(n) are never permutations when n is prime, so we assume an n with
+    exactly 2 prime factors each appearing once.
+    n will also be near the upper boundary of 1e7 as the ratio will be smaller.
+    So we look for 2 primes near sqrt(1e7)
+"""
+
+from Euler.tictoc import tic,toc
+from Euler.eprint import eprint
+from Euler.gcdlcm import gcd
+from Euler.digits import ispermutation
+from Euler.primes import isprime,primefactors
+
+
+
+def totient(n,f1,f2):
+    cnd = n-1
+    cnd -= (n-1)//f1
+    cnd -= (n-1)//f2
+    cnd += (n-1)//(f1*f2)
+    return cnd
+    
+
+if __name__=="__main__":
+    tic()
+    upper = 10_000_000
+    primes = [p for p in range(1000,10_000) if isprime(p)]
+    cnd = set()
+    for f1 in primes:
+        for f2 in primes:
+            if f2>f1:
+                break
+            n = f1*f2
+            if n>upper:
+                break
+            phi = totient(n,f1,f2)
+            if ispermutation(n,phi):
+                cnd.add((n,phi))
+    print(min(cnd,key=x->x[0]/x[1])[0])
+    toc()
+    exit()

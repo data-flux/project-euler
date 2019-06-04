@@ -67,12 +67,12 @@
 |63|[Powerful digit counts](https://projecteuler.net/problem=63)|[done](./projecteuler063.py)|
 |64|[Odd period square roots](https://projecteuler.net/problem=64)|[done](./projecteuler064.py)|
 |65|[Convergents of e](https://projecteuler.net/problem=65)|[done](./projecteuler065.py)|
-|66|[Diophantine equation](https://projecteuler.net/problem=66)|[in-progress](./projecteuler066.py)|
+|66|[Diophantine equation](https://projecteuler.net/problem=66)|[done](./projecteuler066.py)|
 |67|[Maximum path sum II](https://projecteuler.net/problem=67)|[done](./projecteuler067.py)|
 |68|[Magic 5-gon ring](https://projecteuler.net/problem=68)|[done](./projecteuler068.jpg)|
 |69|[Totient maximum](https://projecteuler.net/problem=69)|[done](./projecteuler069.coco)|
-|70|[Totient permutation](https://projecteuler.net/problem=70)|not-attempted|
-|71|[Ordered fractions](https://projecteuler.net/problem=71)|not-attempted|
+|70|[Totient permutation](https://projecteuler.net/problem=70)|[done](./projecteuler070.coco)|
+|71|[Ordered fractions](https://projecteuler.net/problem=71)|[done](./projecteuler071.py)|
 |72|[Counting fractions](https://projecteuler.net/problem=72)|not-attempted|
 |73|[Counting fractions in a range](https://projecteuler.net/problem=73)|not-attempted|
 |74|[Digit factorial chains](https://projecteuler.net/problem=74)|not-attempted|
@@ -673,3 +673,5 @@
 |669|[The King's Banquet](https://projecteuler.net/problem=669)|not-attempted|
 |670|[Colouring a Strip](https://projecteuler.net/problem=670)|not-attempted|
 |671|[Colouring a Loop](https://projecteuler.net/problem=671)|not-attempted|
+|672|[One more one](https://projecteuler.net/problem=672)|not-attempted|
+|673|[Beds and Desks](https://projecteuler.net/problem=673)|not-attempted|

@@ -78,4 +78,3 @@ def primefactors(n,primes=None):
         raise Exception("Prime list insufficient!")
     return factors
 
-
