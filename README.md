@@ -73,9 +73,9 @@
 |69|[Totient maximum](https://projecteuler.net/problem=69)|[done](./projecteuler069.coco)|
 |70|[Totient permutation](https://projecteuler.net/problem=70)|[done](./projecteuler070.coco)|
 |71|[Ordered fractions](https://projecteuler.net/problem=71)|[done](./projecteuler071.py)|
-|72|[Counting fractions](https://projecteuler.net/problem=72)|[EXPLANATION:](./projecteuler072.coco)|
-|73|[Counting fractions in a range](https://projecteuler.net/problem=73)|not-attempted|
-|74|[Digit factorial chains](https://projecteuler.net/problem=74)|not-attempted|
+|72|[Counting fractions](https://projecteuler.net/problem=72)|[done](./projecteuler072.coco)|
+|73|[Counting fractions in a range](https://projecteuler.net/problem=73)|[needs-optimization](./projecteuler073.py)|
+|74|[Digit factorial chains](https://projecteuler.net/problem=74)|[needs-optimization](./projecteuler074.coco)|
 |75|[Singular integer right triangles](https://projecteuler.net/problem=75)|not-attempted|
 |76|[Counting summations](https://projecteuler.net/problem=76)|[done](./projecteuler076.py)|
 |77|[Prime summations](https://projecteuler.net/problem=77)|not-attempted|

@@ -2,8 +2,9 @@
 """
 PROBLEM: 072
 AUTHOR:  Dirk Meijer
-STATUS:  
+STATUS:  done
 EXPLANATION:
+    memoization and some identity functions from wikipedia
 """
 
 from Euler.tictoc import tic,toc

@@ -1,0 +1,33 @@
+#!/usr/bin/env coconut-run
+"""
+PROBLEM: 074
+AUTHOR:  Dirk Meijer
+STATUS:  needs-optimization
+EXPLANATION:
+    proper tail call reduced function, could do with a speed boost by memoization,
+    but it's not clear to me how to best accomplish this.
+"""
+
+from Euler.tictoc import tic,toc
+from Euler.eprint import eprint
+from Euler.digits import intToDigits
+
+fac = [1,1,2,6,24,120,720,5040,40320,362880]
+digfacsum = sum .. map$(fac[]) .. intToDigits
+
+def chain(n,c=[]):
+    d = digfacsum(n)
+    if d in c:
+        if n in c:
+            return c
+        return c+[n]
+    else:
+        return chain(d,c+[n])
+
+
+if __name__=="__main__":
+    tic()
+    upper = 1_000_000
+    print(sum(map(n->len(chain(n))==60,range(1,upper))))
+    toc()
+    exit()
