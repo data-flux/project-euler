@@ -1,0 +1,36 @@
+#!/usr/bin/env coconut-run
+"""
+PROBLEM: 072
+AUTHOR:  Dirk Meijer
+STATUS:  
+EXPLANATION:
+"""
+
+from Euler.tictoc import tic,toc
+from Euler.eprint import eprint
+from Euler.primes import totient,isprime
+
+
+
+if __name__=="__main__":
+    tic()
+    upper = 1_000_000
+    memoized = [None]*(upper+1)
+    memoized[1] = 1
+    primes = [p for p in range(upper+1) if isprime(p)]
+    total = 0
+    for n in range(2,upper+1):
+        if isprime(n):
+            memoized[n] = n-1
+        elif n%2==0:
+            if n%4==0:
+                memoized[n] = 2*memoized[n//2]
+            else:
+                memoized[n] = memoized[n//2]
+        else:
+            memoized[n] = totient(n,primes)
+        total += memoized[n]
+
+    print(total)
+    toc()
+    exit()

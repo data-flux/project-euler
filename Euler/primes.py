@@ -62,7 +62,6 @@ def generateLargePrime(keysize=1024):
 
 
 def primefactors(n,primes=None):
-    import math
     primes = primes or (p for p in range(n+1) if isprime(p))
     factors = dict()
     for p in primes:
@@ -78,3 +77,16 @@ def primefactors(n,primes=None):
         raise Exception("Prime list insufficient!")
     return factors
 
+def totient(n,primes=None):
+    if isprime(n):
+        return n-1
+    primes = primes or [p for p in range(n+1) if isprime(p)]
+    tot = n
+    for fac in primefactors(n,primes).keys():
+        tot //= fac
+        tot *= (fac-1)
+    return tot
+    
+
+if __name__=="__main__":
+    print(totient(87109)) #should be 79180

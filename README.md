@@ -73,7 +73,7 @@
 |69|[Totient maximum](https://projecteuler.net/problem=69)|[done](./projecteuler069.coco)|
 |70|[Totient permutation](https://projecteuler.net/problem=70)|[done](./projecteuler070.coco)|
 |71|[Ordered fractions](https://projecteuler.net/problem=71)|[done](./projecteuler071.py)|
-|72|[Counting fractions](https://projecteuler.net/problem=72)|not-attempted|
+|72|[Counting fractions](https://projecteuler.net/problem=72)|[EXPLANATION:](./projecteuler072.coco)|
 |73|[Counting fractions in a range](https://projecteuler.net/problem=73)|not-attempted|
 |74|[Digit factorial chains](https://projecteuler.net/problem=74)|not-attempted|
 |75|[Singular integer right triangles](https://projecteuler.net/problem=75)|not-attempted|
@@ -675,3 +675,4 @@
 |671|[Colouring a Loop](https://projecteuler.net/problem=671)|not-attempted|
 |672|[One more one](https://projecteuler.net/problem=672)|not-attempted|
 |673|[Beds and Desks](https://projecteuler.net/problem=673)|not-attempted|
+|674|[Solving $\mathcal{I}$-equations](https://projecteuler.net/problem=674)|not-attempted|
