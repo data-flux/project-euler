@@ -78,10 +78,10 @@
 |74|[Digit factorial chains](https://projecteuler.net/problem=74)|[needs-optimization](./projecteuler074.coco)|
 |75|[Singular integer right triangles](https://projecteuler.net/problem=75)|[done](./projecteuler075.py)|
 |76|[Counting summations](https://projecteuler.net/problem=76)|[done](./projecteuler076.py)|
-|77|[Prime summations](https://projecteuler.net/problem=77)|not-attempted|
-|78|[Coin partitions](https://projecteuler.net/problem=78)|not-attempted|
+|77|[Prime summations](https://projecteuler.net/problem=77)|[done](./projecteuler077.py)|
+|78|[Coin partitions](https://projecteuler.net/problem=78)|[done](./projecteuler078.py)|
 |79|[Passcode derivation](https://projecteuler.net/problem=79)|[done](./projecteuler079.jpg)|
-|80|[Square root digital expansion](https://projecteuler.net/problem=80)|not-attempted|
+|80|[Square root digital expansion](https://projecteuler.net/problem=80)|[done](./projecteuler080.py)|
 |81|[Path sum: two ways](https://projecteuler.net/problem=81)|not-attempted|
 |82|[Path sum: three ways](https://projecteuler.net/problem=82)|not-attempted|
 |83|[Path sum: four ways](https://projecteuler.net/problem=83)|not-attempted|
