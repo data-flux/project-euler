@@ -82,9 +82,9 @@
 |78|[Coin partitions](https://projecteuler.net/problem=78)|[done](./projecteuler078.py)|
 |79|[Passcode derivation](https://projecteuler.net/problem=79)|[done](./projecteuler079.jpg)|
 |80|[Square root digital expansion](https://projecteuler.net/problem=80)|[done](./projecteuler080.py)|
-|81|[Path sum: two ways](https://projecteuler.net/problem=81)|not-attempted|
-|82|[Path sum: three ways](https://projecteuler.net/problem=82)|not-attempted|
-|83|[Path sum: four ways](https://projecteuler.net/problem=83)|not-attempted|
+|81|[Path sum: two ways](https://projecteuler.net/problem=81)|[done](./projecteuler081.py)|
+|82|[Path sum: three ways](https://projecteuler.net/problem=82)|[done](./projecteuler082.py)|
+|83|[Path sum: four ways](https://projecteuler.net/problem=83)|[in-progress](./projecteuler083.py)|
 |84|[Monopoly odds](https://projecteuler.net/problem=84)|not-attempted|
 |85|[Counting rectangles](https://projecteuler.net/problem=85)|[done](./projecteuler085.py)|
 |86|[Cuboid route](https://projecteuler.net/problem=86)|not-attempted|
@@ -676,3 +676,4 @@
 |672|[One more one](https://projecteuler.net/problem=672)|not-attempted|
 |673|[Beds and Desks](https://projecteuler.net/problem=673)|not-attempted|
 |674|[Solving $\mathcal{I}$-equations](https://projecteuler.net/problem=674)|not-attempted|
+|675|[$2^{\omega(n)}$](https://projecteuler.net/problem=675)|not-attempted|
